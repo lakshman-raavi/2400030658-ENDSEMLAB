@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback Form</title>
+</head>
+ <script src="Feedback.js" defer></script>
+
+<body>
+
+<h2>Student Feedback Form</h2>
+
+<form id="feedbackForm">
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Course:</label><br>
+    <input type="text" id="course"><br><br>
+
+    <label>Rating (1–5):</label><br>
+    <select id="rating">
+        <option value="">Select Rating</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select><br><br>
+
+    <label>Comments:</label><br>
+    <textarea id="comments"></textarea><br><br>
+
+    <label>Upload File:</label><br>
+    <input type="file" id="fileUpload" accept=".jpg,.png,.pdf,.docx"><br><br>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<p id="successMsg" style="display:none;">Feedback submitted successfully!</p>
+
+
+</body>
+</html>
